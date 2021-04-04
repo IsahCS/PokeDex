@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>PokeDex</title>
+  <link rel="sortcut icon" href="./img/pokebola.png" type="image/x-icon" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <div id="loading">
+    <img id="loading-image" src="./img/poke.gif" alt="Loading..." />
+  </div> 
+  <header class="menu-principal">
+    <main>
+      <div class="logo">
+        <img onclick="fetchPokemon()" src="./img/logo-pokemon.png">
+        <input onmouseover="expandeBusca(this)" onmouseout="fechaBusca(this)" class="fechado" type="text" name="s" autocomplete="off" placeholder="Buscar Pokemon" id="searchbox" value="" data-js="">
+        <i class="fas fa-fish"></i>
+        <div id="titulo-site" class="visivel"></div> 
+      </div>  
+    </main>
+  </header>
+
+  <div class="container">
+    <h1>Pokedex</h1>
+    <ul id="pokedex" class="pokedex"></ul>
+  </div>
+  
+  <footer>
+    <script src="./search.js"></script>
+    <script src="./app.js"></script>
+  </footer>
+</body>
+</html>
