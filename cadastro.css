@@ -1,0 +1,65 @@
+body{
+    background: linear-gradient(to right, rgb(197, 230, 236), rgb(239, 187, 230));
+    height: 100%;
+}
+
+.container-cadastro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.box{
+    border: solid 1px;
+    width: 40%;
+    height: 580px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0px 10px -5px;
+    border-color: #ffffff;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: inherit;
+    align-items: center;
+}
+
+.box-cadastro{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-group{
+    margin-top: 15px;
+}
+
+#form{
+    width: 85%;
+}
+
+.form-check{
+    margin-top: 15px;
+}
+
+#btn-cadastrar{
+    width: 100%;
+    margin-top: 15px;
+}
+
+#btn-login{
+    margin-right: 5px;
+}
+
+.box img{
+    width: 150px;
+}
+
+.mensagem{
+    color: red;
+}

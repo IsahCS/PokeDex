@@ -15,9 +15,9 @@ const fetchPokemon = () =>{
     const pokemonPromises = []
     
     //percorre 150x
-    for(let i = 1; i <= 700; i++){
+    for(let i = 1; i <= 150; i++){
         //fiz esse if pq o poke 48 tava bugado
-        if(i !== 48 && i !== 97 && i !== 506 && i !== 612) {
+        if(i !== 48 && i !== 97) {
             //faz chamada pra api de pokemons e salva a promise no array pokemonPromises
             pokemonPromises.push(fetch(getPokemonUrl(i)).then(response => response.json()))
         }
@@ -33,7 +33,7 @@ const fetchPokemon = () =>{
                 
                 //cria elementos em forma de texto pra usar mais tarde
                 accumulator += `
-                    <li class="card ${types[0]}">
+                    <li class="card-pokemon ${types[0]}">
                         <img class="card-image alt="${pokemon.name}" src="https://pokeres.bastionbot.org/images/pokemon/${pokemon.id}.png"/>
                         <h2 class="card-title">${pokemon.id}. ${pokemon.name}</h2>
                         <p class="card-subtitle">${types.join(' | ')}</p>
@@ -87,7 +87,13 @@ searchbox.addEventListener('keydown', function (event) {
     }
 });
 
+function redirecionarLogin(){
+    window.location.href = "./login.html";
+} 
 
+function redirecionarCadastro(){
+    window.location.href = "./cadastro.html"
+}
 
 // window.addEventListener('load', function(){
 //     // loader.style.display = 'none'

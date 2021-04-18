@@ -11,6 +11,6 @@ function fechaBusca(elemento){
     document.getElementById('titulo-site').classList.remove('invisivel')
     document.getElementById('titulo-site').classList.add('visivel')
 }
-console.log(fechaBusca)
+// console.log(fechaBusca)
 
 
